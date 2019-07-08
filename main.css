@@ -1,0 +1,261 @@
+
+    body {
+        text-align: center;
+    }
+
+    #tab li {
+        list-style: none;
+        display: inline-block;
+        position: relative;
+        margin-bottom: 20px;
+        font-size: 1.2em;
+    }
+
+    .tab_gary {
+        background: rgb(221, 221, 221);
+        color:#000;
+        border-radius: 30px;
+    }
+
+    .tab_gary:hover {
+        background: rgb(199, 199, 199);
+    }
+
+    .tab_red {
+        background: rgb(247, 138, 138);
+        border-radius: 30px;
+    }
+
+    .tab_red:hover {
+        background: rgb(255, 103, 103);
+    }
+
+    .tab_blue {
+        background: rgb(138, 192, 247);
+        border-radius: 30px;
+    }
+
+    .tab_blue:hover {
+        background: rgb(82, 168, 255);
+    }
+
+    #tab a:hover {
+    }
+
+    #tab a {
+        padding: 5px;
+        padding-left: 12px;
+        padding-right: 48px;
+        transition: all 0.2s;
+        color:#000;
+        text-decoration: none;
+    }
+
+    #tab #delete {
+        background: url(close.png);
+        background-size: 100% 100%;
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        position: absolute;
+        top: 4px;
+        right: 29px;
+        transition: all 0.5s;
+        padding: 0;
+        border-radius: 64px;
+    }
+
+    #delete:hover {
+        transform: rotate(180deg);
+    }
+
+    #tab #edit {
+        background: url(edit.png) no-repeat;
+        background-size: 15px 15px;
+        background-position: top;
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        position: absolute;
+        top: 4px;
+        right: 9px;
+        transition: all 0.3s;
+        padding: 0;
+    }
+
+    #edit:hover {
+        top: 0px !important;
+        height: 19px !important;
+    }
+
+    #search img {
+        width: 270px;
+    }
+
+    #search_this {
+        width: 600px;
+        font-size: 1.3em;
+        position: relative;
+        height: 45px;
+        margin: auto;
+        display: inline-block;
+    }
+
+    #search_this input {
+        outline: none;
+        width: 100%;
+        height: auto;
+        padding: 5px;
+        font-size: 1.3em;
+        position: absolute;
+        left: 0;
+    }
+
+    #search_ {
+        font-size: 1.3em;
+        height: 100%;
+        position: absolute;
+        right: 0;
+    }
+
+    footer{
+        margin-top: 50px;
+    }
+
+    #tab {
+        margin: auto;
+        margin-top: 20px;
+        width: 900px;
+        display: inline-block;
+    }
+
+    #set {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        color: #000;
+    }
+
+    #fucen_set {
+        display: none;
+        z-index: 1;
+        width: 500px;
+        height: 200px;
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+        background: rgb(145, 145, 145);
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.411);
+    }
+
+    #fucen_set h3 {
+        color: #FFF;
+        font-weight: 500;
+    }
+
+    #fucen_set p a {
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        border-radius: 64px;
+        border: 2px solid #FFF;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #fucen_set p input {
+        width: unset;
+        display: inline-block;
+    }
+
+    #fucen_background {
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+        position: absolute;
+        display: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    #color_red {
+        background: rgb(247, 138, 138);
+    }
+
+    #color_blue {
+        background: rgb(138, 192, 247);
+    }
+
+    #color_gray {
+        background: rgb(224, 224, 224);
+    }
+
+    #name,#link,#copy {
+        width: auto;
+        height: auto;
+        display: inline-block;
+    }
+
+    #add {
+        
+        vertical-align: unset;
+    }
+
+    .btn-group{
+        vertical-align: top;
+    }
+
+    textarea {
+        width: 600px !important;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #search_list {
+        position: absolute;
+        width: 100%;
+        top: 45px;
+        z-index: 1;
+        display: none;
+    }
+
+
+    @media only screen and (max-width : 480px) {
+        #search_box {
+            display: none;
+        }
+
+        #tab {
+            margin-top: 0;
+            width: 100%;
+            display: none;
+        }
+
+        #add_box {
+        }
+
+        #set {
+            display: none;
+        }
+
+        #choose_ {
+            display: none;
+        }
+
+        #add {
+            display: block;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+
+        #add_new {
+            line-height: 4;
+        }
+    }
+
+    
+    
